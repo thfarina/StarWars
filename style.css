@@ -16,6 +16,15 @@
     padding-left: 3%;
 }
 
+.botao{
+    background-color: transparent;
+    border: solid 2px #fff;
+    
+    color: #fff;
+
+    cursor: pointer;
+}
+
 header{
     position: relative;
     background: linear-gradient(to right, #000 50%, #fff 50%);
@@ -145,16 +154,11 @@ hr{
 }
 
 .red-button{
-    background-color: transparent;
-    border: solid 2px #fff;
     border-radius: 5px;
     
     padding: .5em 2em;
     
-    color: #fff;
     font-size: 1.2rem;
-
-    cursor: pointer;
 }
 
 .red-nota{
@@ -185,7 +189,7 @@ hr{
 .sobre-box hr{
     width: 150px;
     height: 2px;
-
+    
     margin-left: auto;
 }
 
@@ -226,7 +230,7 @@ hr{
     
     text-transform: uppercase;
     text-align: right;  
-
+    
     position: relative;
     padding: 4em 0;
 }
@@ -239,14 +243,14 @@ hr{
 .structure li{
     margin: .7em;
     padding: .2em;
-
+    
     font-size: 1.2rem;
 }
 
 .structure li:hover{
     background-color: #d74430;
     color: #fff;
-
+    
     cursor: pointer;
 }
 
@@ -259,7 +263,7 @@ hr{
     font-size: 2em;
     color: #fff;
     text-transform: uppercase;
-
+    
     padding: 4em 0 2em 4em;
 }
 
@@ -270,17 +274,40 @@ hr{
 
 .battle{
     flex: 1 1 400px;
-    /* width: 100%; */
+
     max-width: 100%;
 }
 
-.leftgallery{
+.rightgallery{
     display: flex;
     flex: 1 1 400px;
     flex-wrap: wrap;
 }
 
-.leftgallery img{
+.rightgallery img{
     display: block;
     width: 100%;
+}
+
+.botao-hover{
+    padding: .2em 1.5em;
+    
+    font-size: 1.2rem;
+}
+
+.hierarquia{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.nota{
+    text-align: right;
+    color: #fff;
+    font-size: .8em;
+    font-weight: 300;
+
+    position: relative;
+    left: 50%;
+    width: 50%;
 }
