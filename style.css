@@ -34,28 +34,28 @@ header{
     display: block;
 }
 
-.element-header1, .element-header2{
+.star, .wars{
     position: absolute;
     width: 25%;
     transform: translate(-50%,-50%);
-    top: 55%;
+    top: 60%;
 }
 
-.element-header1{
+.star{
     left: 32%;
 }
-.element-header2{
+.wars{
     left: 80%;
 }
-.element-header3{
+.kylo{
     position: absolute;
     transform: translate(-50%,-50%);
-    width: 75%;
-    top: 55%;
+    width: 70%;
+    top: 60%;
     left: 47%;
 }
 
-.element-header4{
+.slider{
     position: absolute;
     transform: translate(-50%,-50%);
     bottom: 0%;
@@ -73,7 +73,7 @@ hr{
 .leftarrow, .rightarrow{
     width: .6em;
     padding: .1em;
-    background-color: rgb(181, 208, 216);
+    background-color: #b5d0d8;
 }
 
 .leftarrow{
@@ -190,14 +190,24 @@ hr{
 
 .bot-section1{
     position: relative;
-    margin-top: 50px;
-    bottom: 0px;
-
+    
     display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.lord, .rey{
+    position: absolute;
+    height: 100%;
+    bottom: -50px;
 }
 
 .lord{
-    position: absolute;
+    left: 0px;
+}
+
+.rey{
+    right: 0px;
 }
 
 .structure{
@@ -206,6 +216,9 @@ hr{
     
     text-transform: uppercase;
     text-align: right;  
+
+    position: relative;
+    padding: 4em 0;
 }
 
 .bot-titulo{
@@ -221,11 +234,6 @@ hr{
 .structure li:hover{
     background-color: #d74430;
     color: #fff;
-}
-
-.rey{
-    position: absolute;
-    right: -100px;
 }
 
 .temp{
