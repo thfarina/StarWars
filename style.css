@@ -191,8 +191,13 @@ hr{
 .bot-section1{
     position: relative;
     margin-top: 50px;
+    bottom: 0px;
 
     display: flex;
+}
+
+.lord{
+    position: absolute;
 }
 
 .structure{
@@ -200,7 +205,7 @@ hr{
     flex-direction: column;
     
     text-transform: uppercase;
-    text-align: right;
+    text-align: right;  
 }
 
 .bot-titulo{
@@ -211,15 +216,19 @@ hr{
 .structure li{
     margin: .7em;
     padding: .2em;
-
 }
 
 .structure li:hover{
-    background-color: orange;
+    background-color: #d74430;
     color: #fff;
 }
 
+.rey{
+    position: absolute;
+    right: -100px;
+}
+
 .temp{
-    background-color: darkgray;
+    background-color: #2d2d2d;
     height: 500em;
 }
