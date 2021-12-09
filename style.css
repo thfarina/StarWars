@@ -355,21 +355,49 @@ h2.comojogar{
     font-weight: 400;
 }
 
+.botoes:hover .numero{
+    font-weight: 800;
+}
+
 .botao2{
     background-color: #000;
     border: none;
     
+    position: relative;
     padding: .5em 1.5em;
     margin: 1.5em 0em;
     
     font-size: 1.2em;
     font-weight: 300;
     color: #fff;
+
+    isolation: isolate;
 }
 
-.botao2:hover{
+.botao2:hover {
+	cursor: pointer;
+}
+
+.botao2:before {
+	content: '';
+	display: block;
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+
+	height: 100%;
+	width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
     
-    cursor: pointer;
+	background: #d74430;
+	transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.botao2:hover:before {
+    transform: scaleX(1);
 }
 
 .texto{
@@ -389,11 +417,7 @@ h2.comojogar{
     bottom: 0px;
 }
 
-.number-bold{
-    font-weight: 800;
-}
-
-.cor-linha{
+.botoes:hover .linha{
     background-color: #d74430;
 }
 
@@ -433,8 +457,7 @@ h2.comojogar{
     color: #fff;
     font-weight: 300;
     font-size: .8rem;
-    text-align: left;
-    
+    text-align: left;  
 }
 
 .left-footer-content hr{
