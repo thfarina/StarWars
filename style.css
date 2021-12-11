@@ -28,7 +28,6 @@
 /* ---------------------------------------HEADER--------------------------------------- */
 
 header{
-    position: relative;
     background: linear-gradient(to right, #000 50%, #fff 50%);
 }
 
@@ -41,7 +40,7 @@ header{
 
 .background-header {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
 
@@ -70,10 +69,8 @@ header{
 .slider{
     position: absolute;
     transform: translate(-50%,-50%);
-    bottom: 0%;
-    right: 5%;
-    
-    font-size: 1.5rem;
+    bottom: 0px;
+    right: 0px;  
 }
 
 .slider h3{
@@ -83,16 +80,16 @@ header{
 
 hr{
     border: none;
-    height: 2px;
+    height: .1rem;
     background-color: black;
-    margin: .5em 0;
+    margin: .5rem 0;
 }
 
 .leftarrow, .rightarrow{
-    width: .6em;
-    padding: .1em;
+    width: 1rem;
+    padding: .2rem;
     background-color: #b5d0d8;
-
+    
     cursor: pointer;
 }
 
@@ -104,13 +101,21 @@ hr{
     transform: rotate(-90deg);
 }
 
-.number-header{
-    font-size: .6em;
+.bigger-number, .slider h3{
+    font-size: 1.5rem;
+    font-size: clamp(.5rem, .5rem + 1vw, 1.5rem);
+}
+
+.lower-number{
+    font-size: 1rem;
+    font-size: clamp(.3rem, .3rem + 1vw, 1rem);
+    
 }
 /* ---------------------------------------fim do slider--------------------------------------- */
 
 /* ---------------------------------------MAIN--------------------------------------- */
 
+/* ---------------------------------------início section 1 top--------------------------------------- */
 .section1{
     background-image: url("img/sta-uo-robot.png");
     background-repeat: no-repeat;
@@ -126,7 +131,6 @@ hr{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
 }
 
 .red-box{
@@ -216,6 +220,9 @@ hr{
     justify-content: center;
 }
 
+/* ---------------------------------------fim section 1 top--------------------------------------- */
+/* ---------------------------------------inicio section 1 bot--------------------------------------- */
+
 .lord, .rey{
     position: absolute;
     height: 100%;
@@ -248,7 +255,7 @@ hr{
 
 .structure li{
     margin: .7em;
-    padding: .2em;
+    padding: .3em;
     
     font-size: 1.2rem;
 }
@@ -259,6 +266,7 @@ hr{
     
     cursor: pointer;
 }
+/* ---------------------------------------fim section 1 bot--------------------------------------- */
 
 .atributos{
     background-color: #2d2d2d;
@@ -452,7 +460,6 @@ h2.comojogar{
     text-transform: uppercase;
 
     padding: 7rem 0 3rem 0;
-    
 }
 
 .left-footer{
@@ -488,6 +495,11 @@ h2.comojogar{
     justify-content: space-between;
     
     padding: 2rem 0;
+
+}
+
+.apps img{
+    cursor: pointer;
 }
 
 .starwars{
