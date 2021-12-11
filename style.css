@@ -21,12 +21,11 @@
     border: solid 2px #fff;
     
     color: #fff;
-
+    
     cursor: pointer;
 }
 
 /* ---------------------------------------HEADER--------------------------------------- */
-
 header{
     background: linear-gradient(to right, #000 50%, #fff 50%);
 }
@@ -180,11 +179,12 @@ hr{
     bottom: 20px;
 }
 
+/* ---------------------------------------inicio sobre box--------------------------------------- */
 .sobre-box{
     display: flex;
     align-items: center;
     width: 60%;
-
+    
     text-align: right;
 }
 
@@ -220,12 +220,18 @@ hr{
     justify-content: center;
 }
 
+@media (max-width: 1000px){
+    .sobre-box{
+        flex-direction: column-reverse;
+        width: 40%;
+    }
+}
+/* ---------------------------------------fim sobre box--------------------------------------- */
 /* ---------------------------------------fim section 1 top--------------------------------------- */
 /* ---------------------------------------inicio section 1 bot--------------------------------------- */
-
 .lord, .rey{
     position: absolute;
-    height: 100%;
+    height: 40vw;
     bottom: -50px;
 }
 
@@ -251,6 +257,7 @@ hr{
 .bot-titulo{
     font-weight: 600;
     font-size: 3rem;
+    font-size: clamp(1rem, .5rem + 3vw, 3rem);
 }
 
 .structure li{
@@ -258,6 +265,7 @@ hr{
     padding: .3em;
     
     font-size: 1.2rem;
+    font-size: clamp(.5rem, .1rem + 3vw, 1.2rem);
 }
 
 .structure li:hover{
@@ -282,13 +290,17 @@ hr{
     padding: 0 0 2rem 4rem;
 }
 
+/* ---------------------------------------inicio da gallery--------------------------------------- */
 .gallery{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 1vw;
 }
 
 .battle{
-    flex: 1 1 400px;   
+    flex: 1 1 500px;   
     max-width: 100%;
 }
 
@@ -300,24 +312,22 @@ hr{
 .gallery-img:hover{
     background-image: url("img/hover-gallery.png");
     background-size: cover;
+    background-color: #d74430;
 }
 
 .rightgallery{
     display: flex;
-    flex: 1 1 400px;
+    flex: 1 1 500px;
     flex-wrap: wrap;
 }
 
 .rightgallery img{
     display: block;
+    flex: 1 1 250px;
     width: 50%;
 }
+/* ---------------------------------------fim da gallery--------------------------------------- */
 
-.botao-hover{
-    padding: .2em 1.5em;
-    
-    font-size: 1.2rem;
-}
 
 .hierarquia{
     width: 100%;
@@ -334,6 +344,8 @@ hr{
     position: relative;
     left: 50%;
     width: 50%;
+
+    padding-left: 1vw;
 }
 
 h2.comojogar{
@@ -369,7 +381,7 @@ h2.comojogar{
     flex-direction: column;
     align-items: center;
     
-    margin: 3em;
+    margin: 2.5em;
     
     position: relative;
     width: 20%;
@@ -446,7 +458,6 @@ h2.comojogar{
 /* ---------------------------------------fim dos botões--------------------------------------- */
 
 /* ---------------------------------------FOOTER--------------------------------------- */
-
 .footer-content{
     display: flex;
 
