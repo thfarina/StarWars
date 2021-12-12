@@ -24,8 +24,7 @@
     
     cursor: pointer;
 }
-
-/* ---------------------------------------HEADER--------------------------------------- */
+/*#region ------------------------------- HEADER ------------------------------*/
 header{
     background: linear-gradient(to right, #000 50%, #fff 50%);
 }
@@ -63,8 +62,7 @@ header{
     top: 60%;
     left: 47%;
 }
-
-/* ---------------------------------------início do slider--------------------------------------- */
+/*#region ------------------------------- slider ------------------------------*/
 .slider{
     position: absolute;
     transform: translate(-50%,-50%);
@@ -110,11 +108,14 @@ hr{
     font-size: clamp(.3rem, .3rem + 1vw, 1rem);
     
 }
-/* ---------------------------------------fim do slider--------------------------------------- */
+/*#endregion ---------------------------- slider ------------------------------*/
+/*#endregion ---------------------------- HEADER ------------------------------*/
 
-/* ---------------------------------------MAIN--------------------------------------- */
+/*#region ------------------------------- MAIN ------------------------------*/
 
-/* ---------------------------------------início section 1 top--------------------------------------- */
+/*#region ------------------------------- section 1 ------------------------------*/
+
+/*#region ------------------------------- section 1 top ------------------------------*/
 .section1{
     background-image: url("img/sta-uo-robot.png");
     background-repeat: no-repeat;
@@ -124,29 +125,30 @@ hr{
 
 .top-section1{
     position: relative;
-    margin-top: -50px;
     padding-right: 1%;
-
+    
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
+/*#region ------------------------------- red-box ------------------------------*/
 .red-box{
     background-image: url("img/stromtrupered.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     max-width: 350px;
-
+    
     position: relative;
-
+    margin-top: -50px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     color: #fff;
-
+    
     padding: 4em 2em;
 }
 
@@ -157,7 +159,7 @@ hr{
 
 .red-content{
     padding: 3em 0;
-
+    
     font-size: 1rem;
     font-weight: 300;
 }
@@ -173,13 +175,14 @@ hr{
 .red-nota{
     font-size: .7rem;
     font-weight: 300;
-
+    
     position: absolute;
     right: 15px;
     bottom: 20px;
 }
+/*#endregion ---------------------------- red-box ------------------------------*/
 
-/* ---------------------------------------inicio sobre box--------------------------------------- */
+/*#region ------------------------------- sobrebox ------------------------------*/
 .sobre-box{
     display: flex;
     align-items: center;
@@ -226,9 +229,11 @@ hr{
         width: 40%;
     }
 }
-/* ---------------------------------------fim sobre box--------------------------------------- */
-/* ---------------------------------------fim section 1 top--------------------------------------- */
-/* ---------------------------------------inicio section 1 bot--------------------------------------- */
+/*#endregion ---------------------------- sobrebox ------------------------------*/
+
+/*#endregion ---------------------------- section 1 top ------------------------------*/
+
+/*#region ------------------------------- section 1 bot ------------------------------*/
 .lord, .rey{
     position: absolute;
     height: 40vw;
@@ -274,14 +279,17 @@ hr{
     
     cursor: pointer;
 }
-/* ---------------------------------------fim section 1 bot--------------------------------------- */
+/*#endregion ---------------------------- section 1 bot ------------------------------*/
 
+/*#endregion ---------------------------- section 1 ------------------------------*/
+
+/*#region ------------------------------- section 2 atributos ------------------------------*/
 .atributos{
     background-color: #2d2d2d;
     padding-top: 6rem;
 }
 
-.atributos h2{
+.atributos h2, .comojogar{
     font-weight: 800;
     font-size: 2rem;
     color: #fff;
@@ -289,13 +297,12 @@ hr{
     
     padding: 0 0 2rem 4rem;
 }
-
-/* ---------------------------------------inicio da gallery--------------------------------------- */
+/*#region ------------------------------- gallery ------------------------------*/
 .gallery{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+    
     padding: 1vw;
 }
 
@@ -326,8 +333,7 @@ hr{
     flex: 1 1 250px;
     width: 50%;
 }
-/* ---------------------------------------fim da gallery--------------------------------------- */
-
+/*#endregion ---------------------------- gallery ------------------------------*/
 
 .hierarquia{
     width: 100%;
@@ -344,13 +350,20 @@ hr{
     position: relative;
     left: 50%;
     width: 50%;
-
+    
     padding-left: 1vw;
 }
+/*#endregion ---------------------------- section atributos ------------------------------*/
 
-h2.comojogar{
+/*#region ------------------------------- section 3 como jogar ------------------------------*/
+.comojogar{
+    background-color: #2d2d2d;
+    
     text-align: center;
-    padding: 5em 0;
+    padding: 4em 0;
+    
+    position: absolute;
+    width: 100%;
 }
 
 .comojogar-content{
@@ -364,16 +377,13 @@ h2.comojogar{
 }
 
 .stortm_trooper{
-    position: absolute;
-    top: -400px;
-    left: 0px;
-    width: 40%;
+    
 }
-
-/* ---------------------------------------início dos botões--------------------------------------- */
+/*#region ------------------------------- botões ------------------------------*/
 .botoes-content{
     display: flex;
     justify-content: flex-end;
+
 }
 
 .botoes{
@@ -407,22 +417,22 @@ h2.comojogar{
     font-size: 1.2em;
     font-weight: 300;
     color: #fff;
-
+    
     isolation: isolate;
 }
 
 .botao2:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .botao2:before {
-	content: '';
-
+    content: '';
+    
 	position: absolute;
 	top: 0px;
 	right: 0px;
 	z-index: -1;
-
+    
 	height: 100%;
 	width: 100%;
     transform: scaleX(0);
@@ -455,12 +465,15 @@ h2.comojogar{
 .botoes:hover .linha{
     background-color: #d74430;
 }
-/* ---------------------------------------fim dos botões--------------------------------------- */
+/*#endregion ---------------------------- botões ------------------------------*/
+/*#endregion ---------------------------- section como jogar ------------------------------*/
 
-/* ---------------------------------------FOOTER--------------------------------------- */
+/*#endregion ---------------------------- MAIN ------------------------------*/
+
+/*#region ------------------------------- FOOTER ------------------------------*/
 .footer-content{
     display: flex;
-
+    
     position: relative;
 }
 
@@ -531,3 +544,4 @@ h2.comojogar{
     right: 0px;
     width: 38%;
 }
+/*#endregion ---------------------------- FOOTER ------------------------------*/
