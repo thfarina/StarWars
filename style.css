@@ -12,8 +12,10 @@
     margin: 0 auto;
 }
 
-.container-offset{
-    padding-left: 3%;
+@media (min-width:700px){
+    .container-offset{
+        padding-left: 3%;
+    }
 }
 
 .botao{
@@ -435,7 +437,6 @@ hr{
     width: 50%;
 }
 /*#endregion ---------------------------- gallery ------------------------------*/
-
 .hierarquia{
     width: 100%;
     margin-top: 50px;
@@ -449,10 +450,27 @@ hr{
     font-weight: 300;
     
     position: relative;
-    left: 50%;
+    left: 45%;
+    right: 5%;
     width: 50%;
     
     padding-left: 1vw;
+}
+@media (max-width: 1000px){
+    .atributos h2, .comojogar{
+        text-align: center;
+        padding-left: 0px;
+    }  
+}
+@media (max-width: 527.20px){
+    .gallery-img{
+        padding: 0 3%;
+    }
+    .nota{
+        left: 25%;
+        right: 5%;
+        width: 70%;
+    }
 }
 /*#endregion ---------------------------- section atributos ------------------------------*/
 
