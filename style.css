@@ -65,9 +65,8 @@ header{
 /*#region ------------------------------- slider ------------------------------*/
 .slider{
     position: absolute;
-    transform: translate(-50%,-50%);
-    bottom: 0px;
-    right: 0px;  
+    bottom: 5%;
+    right: 5%;  
 }
 
 .slider h3{
@@ -105,10 +104,52 @@ hr{
 
 .lower-number{
     font-size: 1rem;
-    font-size: clamp(.3rem, .3rem + 1vw, 1rem);
-    
+    font-size: clamp(.3rem, .3rem + 1vw, 1rem);  
 }
+
 /*#endregion ---------------------------- slider ------------------------------*/
+@media (max-width: 760px){
+    .slider{
+        bottom: 3%;
+        right: 3%;  
+    }
+    .leftarrow, .rightarrow{
+        width: .8rem;
+        padding: .1rem;
+    }
+}
+@media (max-width: 600px){
+    .slider{
+        bottom: 1%;
+        right: 1%;  
+    }
+    .leftarrow, .rightarrow{
+        width: .5rem;
+        padding: .05rem;
+    }
+    hr{
+        margin: .1rem 0;
+    }
+}
+@media (max-width: 470px){
+    .slider{
+        bottom: -8%;
+    }
+}
+@media (max-width: 350px){
+    .slider{
+        bottom: -20%;
+        right: .5%;  
+    }
+    .bigger-number, .slider h3{
+        font-size: 1.5rem;
+        font-size: clamp(.4rem, .4rem + 1vw, 1rem);
+    }
+    .lower-number{
+        font-size: 1rem;
+        font-size: clamp(.2rem, .2rem + 1vw, .5rem);  
+    }
+}
 /*#endregion ---------------------------- HEADER ------------------------------*/
 
 /*#region ------------------------------- MAIN ------------------------------*/
@@ -117,10 +158,10 @@ hr{
 
 /*#region ------------------------------- section 1 top ------------------------------*/
 .section1{
-    background-image: url("img/sta-uo-robot.png");
+    background-image: linear-gradient(to top, #fff 0%, #fff5 10%, transparent 15%), url("img/sta-uo-robot.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
+    background-position: top left, top left;
 }
 
 .top-section1{
@@ -130,6 +171,7 @@ hr{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*#region ------------------------------- red-box ------------------------------*/
@@ -223,14 +265,73 @@ hr{
     justify-content: center;
 }
 
+/*#endregion ---------------------------- sobrebox ------------------------------*/
 @media (max-width: 1000px){
     .sobre-box{
         flex-direction: column-reverse;
         width: 40%;
     }
 }
-/*#endregion ---------------------------- sobrebox ------------------------------*/
 
+@media (max-width: 700px){
+    .top-section1{
+        flex-direction: column;
+    }
+    .red-box{
+        margin: 0px;
+        margin-bottom: 5%;
+    }
+    .section1{
+        background-size: auto 50%;
+    }
+    .sobre-box{
+        align-items: flex-end;
+        width: 80%;
+    }
+    .sobre-box hr{
+        margin: 1rem 0;
+        margin-left: auto;
+    }
+}
+@media (max-width: 470px){
+    .red-box{
+        margin-top: 8%;
+        width: 60vw;
+    }
+    .red-titulo{
+        font-size: 2rem;
+        font-size: clamp(.5rem, .5rem + 5vw, 2rem);
+    }
+    .red-content{
+        font-size: .7rem;
+        font-size: clamp(.5rem, .1rem + 5vw, .7rem);
+    }
+    .red-button{
+        font-size: 1rem;
+        font-size: clamp(.5rem, .2rem + 5vw, 1rem);
+        
+        padding: 3%;
+    }
+    .red-nota{
+        font-size: .5rem;
+    }
+    .sobre-box img{
+        height: 30vw;
+    }
+    .sobre-titulo{
+        font-size: 1rem;
+        font-size: clamp(.5rem, .5rem + 5vw, 1rem);
+    }
+    .sobre-text p{
+        font-size: 1rem;
+        font-size: clamp(.5rem, .3rem + 5vw, .7rem);
+    }    
+}
+@media (max-width: 350px){
+    .red-box{
+        margin-top: 18%;
+    }
+}
 /*#endregion ---------------------------- section 1 top ------------------------------*/
 
 /*#region ------------------------------- section 1 bot ------------------------------*/
@@ -383,7 +484,6 @@ hr{
 .botoes-content{
     display: flex;
     justify-content: flex-end;
-
 }
 
 .botoes{
@@ -391,9 +491,10 @@ hr{
     flex-direction: column;
     align-items: center;
     
-    margin: 2.5em;
+    margin: 3rem 2.5rem;
     
     position: relative;
+    bottom: 0px;
     width: 20%;
 }
 
