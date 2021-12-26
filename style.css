@@ -160,7 +160,7 @@ hr{
 
 /*#region ------------------------------- section 1 top ------------------------------*/
 .section1{
-    background-image: linear-gradient(to top, #fff 0%, #fff5 10%, transparent 15%), url("img/sta-uo-robot.png");
+    background-image: linear-gradient(to top, #fff 0%, #fff5 10%, transparent 15%), url("imgs/sta-uo-robot.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top left, top left;
@@ -178,7 +178,7 @@ hr{
 
 /*#region ------------------------------- red-box ------------------------------*/
 .red-box{
-    background-image: url("img/stromtrupered.png");
+    background-image: url("imgs/stromtrupered.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -425,7 +425,7 @@ hr{
 }
 
 .gallery-img:hover{
-    background-image: url("img/hover-gallery.png");
+    background-image: url("imgs/hover-gallery.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #d74430;
